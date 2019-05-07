@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS-table-swift/ListItems.swift"
+            timestampString = "569815006.932639"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ListItems"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS-table-swift/ListItems.swift"
+            timestampString = "569815006.933139"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ListItems"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_table_swift.ListItems.CellImage.getter : weak Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "iOS-table-swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rushil/Desktop/iOS%20Project/iOS-table-swift/iOS-table-swift/ListItems.swift"
+                  timestampString = "569795562.101014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_table_swift.ListItems.CellImage.setter : weak Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "iOS-table-swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rushil/Desktop/iOS%20Project/iOS-table-swift/iOS-table-swift/ListItems.swift"
+                  timestampString = "569795562.1037641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_table_swift.ListItems.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; iOS_table_swift.ListItems"
+                  moduleName = "iOS-table-swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rushil/Desktop/iOS%20Project/iOS-table-swift/iOS-table-swift/ListItems.swift"
+                  timestampString = "569795562.112564"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_table_swift.ListItems.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iOS_table_swift.ListItems&gt;"
+                  moduleName = "iOS-table-swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rushil/Desktop/iOS%20Project/iOS-table-swift/iOS-table-swift/ListItems.swift"
+                  timestampString = "569795562.1156369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
