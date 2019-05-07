@@ -10,18 +10,16 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
 
-    //MARK: Attributes and Variable Initialization
-    
-    final let url = URL(string: "https://jsonplaceholder.typicode.com/albums/1/photos") //Why do we use final ? ? ?
     @IBOutlet var tableView: UITableView!
+
+    //MARK: Attributes and Variable Initialization
+    final let url = URL(string: "https://jsonplaceholder.typicode.com/albums/1/photos") 
     var cells = [Cell]()
+    let rowHeight = 44 //Fixed Row Height
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        self.tableView.rowHeight = 44
-        // Do any additional setup after loading the view, typically from a nib.
-        print("First Message")
+        self.tableView.rowHeight = rowHeight
         downloadJson() //Starts downloading JSON data as soon as view loads
     }
     
@@ -34,18 +32,18 @@ class ViewController: UIViewController, UITableViewDataSource {
                 print("Download Failed") // When error occurs while downloading JSON data
                 return
             }
-            print("downloaded json")
+            print("Downloaded JSON Data")
             do{
                 // Decoding JSON data fetched from URL
                 let decoder = JSONDecoder()
                 self.cells = try decoder.decode([Cell].self, from: data)
         
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { // To update the view with the list of products
                     self.tableView.reloadData()
                 }
                 print(self.cells[0].title)
             } catch {
-                print("decoding error")
+                print("Decoding error")
             }
         }.resume()
 
@@ -56,12 +54,12 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("at line 59")
-        
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? ListItems else { return UITableViewCell() }
         cell.CellLabel.text = cells[indexPath.row].title
         cell.CellImage.image = nil
         
+        // Downloading product image for the cell
         if let imageURL = URL(string: cells[indexPath.row].thumbnailUrl) {
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: imageURL)
